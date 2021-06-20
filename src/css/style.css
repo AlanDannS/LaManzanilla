@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+:root{
+    --principal-letter: 'Sacramento', cursive;
+    --secundary-letter: 'Quicksand', sans-serif;
+}
+
+
+#fp-nav ul li a spam{
+    background: orange;
+}
+
+#fp-nav ul li .fp-tooltip{
+    color: orange;
+}
+
+.nav {
+    background: #3645478c;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 70;
+    width: 100%;
+    margin: 0;
+    padding: 0px 20px;
+}
+
+.nav .home{
+    font-family: var(--principal-letter); 
+    font-size: 25px;
+    font-weight: 700;
+    color: #FFB037; 
+}
+
+.nav li,
+.nav a{
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: var(--secundary-letter);
+    font-weight: 400;
+    font-size: 19px;
+    color: #FFE268;
+    transition: .5s ease;
+}
+
+.nav li.active{
+    border-bottom: 2px solid #FFB037;
+}
+
+.menu li a{
+    transition: .5s ease;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li.active a,
+.menu li:hover a{
+    color: #FFB037;
+    font-weight: 700;
+}
