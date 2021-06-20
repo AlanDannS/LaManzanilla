@@ -5,54 +5,205 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>La Manzanilla</title>
+        <link rel="stylesheet" type="text/css" href="fullpage.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.1/fullpage.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Tangerine"
+        />
         <link rel="stylesheet" href="src/css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.css"
-        />
     </head>
     <body>
         <nav class="nav">
-            <a href="#" class="home">La Manzanilla</a>
+            <a href="#home" class="logo">La Manzanilla</a>
 
             <ul id="menu" class="menu">
-                <li href="#" data-menuanchor="inicio" class="active" >
-                    <a href="#inicio">Inicio</a>
+                <li data-menuanchor="home" class="active">
+                    <a href="#home">Inicio</a>
                 </li>
-                <li href="#" data-menuanchor="sobre" class="active" >
-                    <a href="#sobre">Sobre</a>
+                <li data-menuanchor="about" class="active">
+                    <a href="#about">Sobre</a>
                 </li>
-                <li href="#" data-menuanchor="productos" class="active" >
-                    <a href="#productos">Productos</a>
+                <li data-menuanchor="products" class="active">
+                    <a href="#products">Productos</a>
                 </li>
-                <li href="#" data-menuanchor="contacto" class="active" >
-                    <a href="#contacto">Contacto</a>
+                <li data-menuanchor="contact" class="active">
+                    <a href="#contact">Contacto</a>
                 </li>
             </ul>
-        
         </nav>
-        
-        
+
         <main id="fullpage">
-            <header class="section" id="home">
-                <h1>Home</h1>
-            </header>
-            <section class="section" id="sobre">
-                <h3>About</h3>
+            <section class="section inicio" id="inicio">
+                <h1>
+                    Queseria <br />
+                    <b class="header-title-sec">La Manzanilla</b>
+                </h1>
             </section>
-            <section class="section" id="productos">
-                <h3>Products</h3>
+
+            <section class="section sobre" id="sobre">
+                <div class="sobre-content">
+                    <div class="content content--mision">
+                        <h2 class="logo">Misión</h2>
+                        <p class="mision-text">
+                            Somos una pequeña empresa, con personal capacitado
+                            en la fabricacion de quesos mediante procesos
+                            artesanales cuyo fin es exporta sus productos a
+                            varias localidades nuevas.
+                        </p>
+                    </div>
+
+                    <div class="content content--vision">
+                        <h2 class="logo">Visión</h2>
+                        <p class="vision-text">
+                            Consolidarnos a nivel local y regional, como una
+                            empresa de exportacion de diversos tipos de quesos
+                            crados a travez de procesos artesanales.
+                        </p>
+                    </div>
+
+                    <div class="content content--card">
+                        <article class="card-service">
+                            <div class="content-icon">
+                                <img
+                                    class="icono"
+                                    src="/src/img/verified.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <h3 class="title-card">Certificados</h3>
+                        </article>
+
+                        <article class="card-service">
+                            <div class="content-icon">
+                                <img
+                                    class="icono"
+                                    src="/src/img/verified.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <h3 class="title-card">Garantia</h3>
+                        </article>
+
+                        <article class="card-service">
+                            <div class="content-icon">
+                                <img
+                                    class="icono"
+                                    src="/src/img/limpieza.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <h3 class="title-card">Limpieza e Igiene</h3>
+                        </article>
+                    </div>
+                </div>
             </section>
+
+            <section class="section productos" id="productos">
+
+                
+
+                    <article class="slide">
+                        <div class="content-productos">
+
+                            <article class="card-productos">
+                                <img src="/src/img/queso-oaxaca.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Queso Oaxaca</h3>
+                                </div>
+
+                            </article>
+
+                            <article class="card-productos">
+                                <img src="/src/img/queso-ranchero.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Queso Ranchero</h3>
+                                </div>
+
+                            </article>
+
+                            <article class="card-productos">
+                                <img src="/src/img/queso-cheddar.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Queso Cheddar</h3>
+                                </div>
+
+                            </article>
+                        </div>
+
+                    </article>
+
+                    <article class="slide">
+                        <div class="content-productos">
+
+                            <article class="card-productos">
+                                <img src="/src/img/cheese.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Titulo</h3>
+                                </div>
+
+                            </article>
+
+                            <article class="card-productos">
+                                <img src="/src/img/cheese.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Titulo</h3>
+                                </div>
+
+                            </article>
+
+                            <article class="card-productos">
+                                <img src="/src/img/cheese.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Titulo</h3>
+                                </div>
+
+                            </article>
+                        </div>
+                    </article>
+
+                    <article class="slide">
+                        <div class="content-productos">
+
+                            <article class="card-productos">
+                                <img src="/src/img/cheese.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Titulo</h3>
+                                </div>
+
+                            </article>
+
+                            <article class="card-productos">
+                                <img src="/src/img/cheese.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Titulo</h3>
+                                </div>
+
+                            </article>
+
+                            <article class="card-productos">
+                                <img src="/src/img/cheese.jpg" alt="">
+                                <div class="productos-text">
+                                    <h3>Titulo</h3>
+                                </div>
+
+                            </article>
+                        </div>
+                    </article>
+
+                </div>
+
+            </section>
+
             <footer class="section" id="contacto">
                 <h3>Footer</h3>
             </footer>
         </main>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.0/fullpage.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.1/fullpage.js"></script>
         <script src="src/js/app.js"></script>
     </body>
 </html>
