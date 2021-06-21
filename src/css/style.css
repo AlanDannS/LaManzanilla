@@ -403,7 +403,7 @@ body{
     .content--vision h2, .content--mision h2{
         font-size: 35px;
     }
-    
+        
     .content--vision p, .content--mision p{
         width: 95%;
         font-size: 15px;
@@ -443,4 +443,13 @@ body{
         font-size: 12px;
     }
     
+    .fp-controlArrow.fp-prev{
+        left: 70%;
+
+    }
+    
+    .fp-controlArrow.fp-next{
+        right: 50px;
+
+    }
 }
