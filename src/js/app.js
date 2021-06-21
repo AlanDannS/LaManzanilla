@@ -14,3 +14,14 @@ const seccionesPaginas = new fullpage('#fullpage',{
 		 showActiveTooltip: false, // Mostrar tooltip activa.
 		 verticalCentered: false,
 });
+
+let menu_icon = document.getElementById('menu-icon')
+
+function abrir(){
+	let menu = document.querySelector(".menu")
+	menu.classList.toggle("disable");
+}
+
+menu_icon.addEventListener('click', () => {
+	abrir()
+});
