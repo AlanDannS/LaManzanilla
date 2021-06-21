@@ -169,7 +169,6 @@ body{
     background-size: cover !important;
 }
 
-
 .content-productos{
     width: 100%;
     margin: 15% 0 0 0;
@@ -177,15 +176,14 @@ body{
     text-align: center;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .card-productos{
-
     max-width: 250px;
     max-height: 200px;
     background-color: #364547;
     color: var(--color-naranja);
-    font-family: var(--principal-letter);
 }
 
 .card-productos img{
@@ -216,11 +214,124 @@ body{
     border-color: transparent transparent transparent var(--color-naranja);
 }
 
+.contacto{
+    background: linear-gradient(to bottom,
+    var(--color-fondo-transparente),
+    var(--color-fondo-transparente),
+    var(--color-fondo-transparente)
+    ), url(../img/farm.jpg) !important;
+    background-attachment: fixed; /* Simula el efecto paralax */
+    background-position: center !important;
+    background-size: cover !important;
+    
+}
+
+.content-contacto{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.content-contacto h2{
+    width: 100%;
+    font-size: 45px;
+    text-align: center;
+    margin: 10% 0 0 0;
+}
+
+.redes-sociales{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 15% 0;
+}
+
+.redes-sociales{
+    width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+.redes-sociales li{
+    width: 90px;
+    height: 90px;
+    background: #364547;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.redes-sociales li a{
+    font-size: 60px;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+.redes-sociales li a:hover{
+    color: var(--color-naranja);
+}
+
+.footer{
+    width: 100%;
+    height: 15%;
+    background:#364547;
+    
+}
+
+.footer ul{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer ul li{
+    list-style: none;
+    margin: 20px 0;
+    transition: var(--color-naranja);
+}
+
+.footer ul li:hover{
+    border-bottom: 1px solid var(--color-naranja);
+}
+
+.footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.footer ul li a:hover{
+    color: var(--color-naranja);
+}
+
+.footer p{
+    color: #fff;
+    margin: 0 0 0 2 0px;
+}
+
+.footer p a{
+    color: var(--color-naranja);
+    text-decoration: none;
+}
+
+.footer p i{
+    color: var(--color-naranja);
+}
+
 @media screen and (max-width: 768px){
     .inicio h1{
-        margin: 22% 0 0 0;
         font-size: 50px;
-
     }
 
     .content--vision h2, .content--mision h2{
@@ -231,6 +342,105 @@ body{
         width: 100%;
         margin: auto;
         font-size: 20px;
+    }
+    
+    .content{
+        width: 50%;
+    }
+    
+    .content--vision h2, .content--mision h2{
+        font-size: 40px;
+    }
+    
+    .content--vision p, .content--mision p{
+        width: 90%;
+        font-size: 20px;
+    }
+    
+    .content--card{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .content-productos{
+        margin: 20% 0 0 0;
+    }
+
+    .card-productos{
+        margin: 20px 20px;
+    }
+    
+    .footer ul{
+        justify-content: center;
+    }
+
+    .footer ul li{
+        margin: 10px;
+    }
+    
+}
+
+@media screen and (max-width: 425px){
+    .sobre .sobre-content{
+        display: block;
+    }
+
+    .content{
+        width: 100%;
+        font-size: 25px;
+    }
+
+    .content--mision{
+        padding: 80px 0 0 0;
+    }
+
+    .content--vision{
+        padding: 80px 0 40px 0;
+    }
+    
+    .content--vision h2, .content--mision h2{
+        font-size: 35px;
+    }
+    
+    .content--vision p, .content--mision p{
+        width: 95%;
+        font-size: 15px;
+    }
+
+    .content-icon{
+        width: 70px;
+        height: 70px;
+    }
+    .icono{
+        width: 65px;
+        margin: 5px auto;
+    }
+    .title-card{
+        font-size: 15px;
+    }
+    .redes-sociales li{
+        width: 70px;
+        height: 70px;
+    }
+
+    .redes-sociales li a{
+        font-size: 40px;
+    }
+
+    .footer ul{
+        height: auto;
+    }
+
+    .footer ul li a{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer p{
+        font-size: 12px;
     }
     
 }
