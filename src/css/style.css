@@ -159,8 +159,8 @@ body{
     height: 90px;
 }
 .icono{
-    width: 80px;
-    margin: 5px auto;
+    font-size:60px; 
+    margin-top:15px;
 }
 
 .productos{
@@ -447,9 +447,13 @@ body{
     .content-icon{
         width: 70px;
         height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-    .icono{
-        width: 60px;
+    .content-icon i{
+        font-size: 60px;
+        color: red;
     }
     .title-card{
         font-size: 15px;
